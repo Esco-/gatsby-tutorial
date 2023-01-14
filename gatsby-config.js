@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
+    // source plugins
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -16,5 +17,7 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    // transformer plugins
+    'gatsby-plugin-mdx',
   ],
 }
